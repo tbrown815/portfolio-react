@@ -1,0 +1,9 @@
+
+
+#mainHome.hide {
+    visibility: hidden;
+}
+   
+#mainHome.display {
+visibility: visible;
+}

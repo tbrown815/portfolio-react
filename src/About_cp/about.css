@@ -1,0 +1,9 @@
+
+
+#mainAbout.hide {
+    visibility: hidden;
+}
+   
+#mainAbout.display {
+visibility: visible;
+}

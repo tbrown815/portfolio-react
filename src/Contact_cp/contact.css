@@ -1,0 +1,9 @@
+
+
+#mainContact.hide {
+    visibility: hidden;
+}
+   
+#mainContact.display {
+visibility: visible;
+}

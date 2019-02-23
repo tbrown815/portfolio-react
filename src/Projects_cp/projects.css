@@ -1,0 +1,9 @@
+
+
+#projectsHome.hide {
+    visibility: hidden;
+}
+   
+#projectsHome.display {
+visibility: visible;
+}
