@@ -18,7 +18,7 @@ export default class Contact extends React.Component {
 
                 <h3 className='sectionTitle'>Contact Me:</h3>
                 <br />
-                <p>
+                <p className='contactContent' >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

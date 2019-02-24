@@ -1,27 +1,131 @@
-body {
-  background-color: #EEE;
-  font-family: sans-serif;
-  font-size: 20px;
-  padding: 25px;
-  margin: 0;
-  overflow: auto;
-}
- 
-#container li {
-  margin-bottom: 10px;
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
 }
 
-.menuDiv, .displayDiv {
-  border: 1px solid red;
+body {
+background-color: #EEE;
+font-family: 'Ubuntu Mono', monospace;
+font-size: 20px;
+padding: 25px;
+margin: 0;
+overflow: auto;
+}
+
+.navIcon, .displayDiv, footer {
+border: 1px solid red;
 
 }
 
 .menuDiv {
-  width: 5%;
-  float: left;
+width: 5%;
+float: left;
 }
 
 .displayDiv {
-  width: 90%;
-  float: right;
+margin-top: 1%;
+width: 90%;
+float: right;
+}
+
+.displayDiv, footer {
+float: right;
+width: 85%;
+}
+
+footer {
+font-size: 14px;
+margin-top: 110%;
+margin-left: 1%;
+margin-bottom: 1%;
+text-align: center;
+}
+
+footer a {
+color: #818181;
+}
+
+footer a:visited {
+color: #818181;
+}
+
+footer a:hover {
+color: #111;
+}
+
+img {
+width: 100%;
+border: 1px solid black
+}
+
+.closeTag {
+font-size: 70px;
+margin-bottom: 10%;
+}
+
+
+.navIcon, .closeTag, .sectionTitle {
+font-family: 'Bangers', cursive !important;
+font-weight: lighter; 
+}
+
+.navIcon {
+font-size: 25px;
+width: 30%;
+position: fixed;
+z-index: 1;
+margin-top: 1%;
+}
+
+.navIcon::after {
+content: ' Menu';
+}
+
+
+.sectionTitle {
+font-size: 30px;
+margin-bottom: 5%;
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 480px) {
+
+  .navIcon {
+  margin-left: -3%;
+  }
+
+}
+
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 850px) {
+
+  .navIcon {
+  margin-left: 1%;
+  }
+
+}
+
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 850px) {
+
+  .navIcon::after{
+  content: '';
+  }
+
+  .sectionTitle {
+  font-size: 20px;
+  margin-bottom: 5%;
+  }
+
+  .closeTag {
+  font-size: 40px;
+  text-align: center;
+  }
+
+  footer {
+  font-size: 10px;
+  margin-left: 1%;
+  margin-bottom: 1%;
+  }
+
 }

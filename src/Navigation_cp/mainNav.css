@@ -4,10 +4,10 @@
   }
    
   .navMenu.display {
-    width: 30%;
+    width: 20%;
     overflow: hidden;
   }
-   
+
 
 .navMenu {
     height: 100%;
@@ -17,8 +17,10 @@
     left: 0;
     transition: 0.5s;
     overflow: scroll;
-    z-index: 1000;
+    z-index: 10;
+    
   }
+
   .navMenu p {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -26,13 +28,13 @@
     display: block;
     transition: 0.3s;
   }
-
-  .navMenuSelect {
-    font-size: 25px;
-  }
-   
+  
   .navMenu p:hover {
     color: lightslategrey;
+  }
+  
+  .navMenuSelect {
+    font-size: 25px;
   }
   
   .menuItems {
@@ -41,8 +43,28 @@
   
   .navClose {
     position: absolute;
-    top: -20px;
-    right: 15px;
+    top: 2%;
+    right: 5%;
     font-size: 20px;
     margin-left: 50px;
   }
+
+  @media only screen and (min-device-width: 0px) and (max-device-width: 480px) {
+
+  .navMenu.display {
+    width: 60%;
+    overflow: hidden;
+  }
+  .navMenuSelect {
+    font-size: 20px;
+  }
+
+  .navClose {
+    position: absolute;
+    top: 1.5%;
+    right: 8%;
+    font-size: 15px;
+    margin-left: 50px;
+  }
+
+}

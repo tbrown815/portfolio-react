@@ -18,7 +18,7 @@ export default class About extends React.Component {
 
                 <h3 className='sectionTitle'>About Me:</h3>
                 <br />
-                <p>
+                <p className='aboutContent' >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -28,7 +28,7 @@ export default class About extends React.Component {
                     sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
                 <br />
-                <p>
+                <p className='aboutContent' >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

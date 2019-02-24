@@ -1,9 +1,29 @@
-
-
-#projectsHome.hide {
-    visibility: hidden;
+.projectsHome.hide {
+visibility: hidden;
 }
-   
-#projectsHome.display {
+
+.projectsHome.display {
 visibility: visible;
+}
+
+.projectTitle {
+font-size: 25px;
+}
+
+.projectContent {
+font-size: 25px;
+margin-bottom: 12%;
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 480px) {
+
+    .projectTitle {
+    font-size: 20px;
+    }
+
+
+    .projectContent {
+    font-size: 18px;
+    }
+
 }

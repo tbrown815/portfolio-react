@@ -1,9 +1,23 @@
 
 
-#mainAbout.hide {
-    visibility: hidden;
+.mainAbout.hide {
+visibility: hidden;
 }
-   
-#mainAbout.display {
+
+.mainAbout.display {
 visibility: visible;
+}
+
+.aboutContent {
+font-size: 25px;
+margin-bottom: 5%;
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 480px) {
+
+    .aboutContent {
+    font-size: 18px;
+    margin-bottom: 5%;
+    }
+
 }

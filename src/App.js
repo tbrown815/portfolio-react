@@ -30,22 +30,22 @@ export default class PortfolioMain extends React.Component {
 
 
   toggleNav() {
-    
+
     console.log('ham clicked!')
-    
+
     this.setState({
       navVisible: !this.state.navVisible,
-      
+
     })
 
   }
-  
+
   toggleMain(mainVal) {
-    
+
     console.log('mainVal: ', mainVal)
 
     this.setState({
-     // navVisible: !this.state.navVisible,
+      // navVisible: !this.state.navVisible,
       mainVisible: mainVal
     })
 
@@ -80,19 +80,25 @@ export default class PortfolioMain extends React.Component {
         <div className='menuDiv'>
           <div className='navIcon' id='navIcon' onClick={() => this.toggleNav()}>&#9776;</div>
           <MainNav toggleNav={(mainVal) => this.toggleNav(mainVal)} navVisible={this.state.navVisible}
-              toggleMain={(mainVal) => this.toggleMain(mainVal)} mainVisible={this.state.mainVisible} />
+            toggleMain={(mainVal) => this.toggleMain(mainVal)} mainVisible={this.state.mainVisible} />
         </div>
 
         <div className='displayDiv'>
 
           {mainDisplay}
 
-        <br/><br/>
+          <br /><br />
 
-        <div className='closeTag'>&lt; / &gt;</div>
 
         </div>
 
+
+          <footer>
+          <div className='closeTag'>&lt; / &gt;</div>
+          
+            <p className='footerLink'>
+                <a href="https://www.freepik.com/" target='_blank' rel='noopener noreferrer'>Images created by freepik - www.freepik.com</a></p>
+          </footer>
 
       </div>
 
