@@ -11,22 +11,19 @@ font-size: 20px;
 padding: 25px;
 margin: 0;
 overflow: auto;
+background-color: #e8e8e8;
 }
 
 .navIcon, .displayDiv, footer {
-border: 1px solid red;
+border: 0px solid red;
 
 }
 
 .menuDiv {
-width: 5%;
-float: left;
 }
 
 .displayDiv {
 margin-top: 1%;
-width: 90%;
-float: right;
 }
 
 .displayDiv, footer {
@@ -36,17 +33,13 @@ width: 85%;
 
 footer {
 font-size: 14px;
-margin-top: 110%;
+margin-top: 10%;
 margin-left: 1%;
 margin-bottom: 1%;
 text-align: center;
 }
 
-footer a {
-color: #818181;
-}
-
-footer a:visited {
+footer a, footer a:visited {
 color: #818181;
 }
 
@@ -72,7 +65,7 @@ font-weight: lighter;
 
 .navIcon {
 font-size: 25px;
-width: 30%;
+width: 15%;
 position: fixed;
 z-index: 1;
 margin-top: 1%;
@@ -83,6 +76,22 @@ content: ' Menu';
 }
 
 
+#colorIconBlk {
+color: black;
+}
+
+#colorIconRd {
+color: #9e0012;
+}
+
+#colorIconGrn {
+color: #2d8e39;
+}
+
+#colorIconBlu {
+color: #00329e;
+}
+
 .sectionTitle {
 font-size: 30px;
 margin-bottom: 5%;
@@ -92,6 +101,10 @@ margin-bottom: 5%;
 
   .navIcon {
   margin-left: -3%;
+  }
+
+  footer {
+    margin-top: 55%;
   }
 
 }

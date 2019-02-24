@@ -1,70 +1,113 @@
 
 .navMenu.hide {
-    width: 0;
-  }
-   
-  .navMenu.display {
-    width: 20%;
-    overflow: hidden;
-  }
+width: 0;
+border: 0 !important;
 
+}
+
+.navMenu.display {
+width: 20%;
+overflow: hidden;
+
+}
+
+#selHomeNav, #selAboutNav, #selProjectsNav, #selContactNav {
+  font-family: 'Bangers', cursive !important;
+  font-weight: lighter; 
+  color: whitesmoke;
+
+}
+
+#navMenuHome {
+  background: linear-gradient(-45deg, whitesmoke, #000000);
+  border: 1px solid black;
+
+}
+
+
+#navMenuAbout {
+  background: linear-gradient(-45deg, #9e0012, #000000);
+  border: 1px solid #9e0012;
+
+}
+
+#navMenuProjects {
+  background: linear-gradient(-45deg, #2d8e39, #000000);
+  border: 1px solid #2d8e39;
+
+}
+
+#navMenuContact {
+  background: linear-gradient(-45deg, #00329e, #000000);
+  border: 1px solid #00329e;
+
+}
 
 .navMenu {
-    height: 100%;
-    background: linear-gradient(-45deg,  rgb(255, 136, 0), rgb(180, 96, 0), rgb(107, 57, 1), rgb(29, 15, 0), rgb(0, 0, 0));
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
-    overflow: scroll;
-    z-index: 10;
-    
-  }
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+transition: 0.5s;
+overflow: scroll;
+z-index: 10;
 
-  .navMenu p {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    color: whitesmoke;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .navMenu p:hover {
-    color: lightslategrey;
-  }
-  
-  .navMenuSelect {
-    font-size: 25px;
-  }
-  
-  .menuItems {
-    margin-top: 30%;
-  }
-  
-  .navClose {
-    position: absolute;
-    top: 2%;
-    right: 5%;
-    font-size: 20px;
-    margin-left: 50px;
-  }
+}
 
-  @media only screen and (min-device-width: 0px) and (max-device-width: 480px) {
+.navMenu p {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+color: lightgray;
+display: block;
+transition: 0.3s;
+}
+
+.navMenu p:hover {
+font-weight: bolder;
+color: whitesmoke;
+}
+
+.navMenuSelect {
+font-size: 25px;
+}
+
+.menuItems {
+margin-top: 30%;
+}
+
+.navClose {
+position: absolute;
+top: 2%;
+right: 5%;
+font-size: 20px;
+margin-left: 50px;
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 480px) {
 
   .navMenu.display {
-    width: 60%;
-    overflow: hidden;
+  width: 60%;
+  overflow: hidden;
   }
   .navMenuSelect {
-    font-size: 20px;
+  font-size: 20px;
   }
 
   .navClose {
-    position: absolute;
-    top: 1.5%;
-    right: 8%;
-    font-size: 15px;
-    margin-left: 50px;
+  position: absolute;
+  top: 1.5%;
+  right: 8%;
+  font-size: 15px;
+  margin-left: 50px;
   }
 
+}
+
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 1050px) {
+
+  .navMenu.display {
+  width: 30%;
+  overflow: hidden;
+  }
 }

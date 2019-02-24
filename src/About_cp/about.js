@@ -4,6 +4,10 @@ import './about.css';
 
 export default class About extends React.Component {
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render() {
 
         let isVisible = 'hide mainAbout';
@@ -16,7 +20,7 @@ export default class About extends React.Component {
 
             <div id='mainAbout' className={isVisible}>
 
-                <h3 className='sectionTitle'>About Me:</h3>
+                <h3 className='sectionTitle' id='colorIconRd'>About Me:</h3>
                 <br />
                 <p className='aboutContent' >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et

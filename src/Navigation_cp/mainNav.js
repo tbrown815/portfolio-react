@@ -20,15 +20,42 @@ export default class MainNav extends React.Component {
             isVisible = 'display navMenu';
         }
 
+        let homeMenu, aboutMenu, projectsMenu, contactMenu, navMenu
+
+        if (this.props.mainVisible === 0) {
+            homeMenu = 'selHomeNav'
+            navMenu = 'navMenuHome'
+        }
+        if (this.props.mainVisible === 1) {
+            aboutMenu = 'selAboutNav'
+            navMenu = 'navMenuAbout'
+        }
+        if (this.props.mainVisible === 2) {
+            projectsMenu = 'selProjectsNav'
+            navMenu = 'navMenuProjects'
+        }
+        if (this.props.mainVisible === 3) {
+            contactMenu = 'selContactNav'
+            navMenu = 'navMenuContact'
+        }
+
+        /*
+        mainVisible =
+        Home = 0
+        About = 1
+        Projects = 2
+        Contact = 3
+        */
+
         return (
 
-            <div id='navMenu' className={isVisible} >
-                <p className='navClose' onClick={() => this.props.toggleNav()}>Close X</p>
+            <div id={navMenu} className={isVisible} >
+                <p className='navClose' onClick={() => this.props.toggleNav()}>&lt;Close /&gt;</p>
                 <div className='menuItems'>
-                    <p className='navMenuSelect' onClick={() => this.toggleDisplay(0)}>Home</p>
-                    <p className='navMenuSelect' onClick={() => this.toggleDisplay(1)}>About Me</p>
-                    <p className='navMenuSelect' onClick={() => this.toggleDisplay(2)}>Projects</p>
-                    <p className='navMenuSelect' onClick={() => this.toggleDisplay(3)}>Contact</p>
+                    <p id={homeMenu} className='navMenuSelect' onClick={() => this.toggleDisplay(0)}>Home</p>
+                    <p id={aboutMenu} className='navMenuSelect' onClick={() => this.toggleDisplay(1)}>About Me</p>
+                    <p id={projectsMenu} className='navMenuSelect' onClick={() => this.toggleDisplay(2)}>Projects</p>
+                    <p id={contactMenu} className='navMenuSelect' onClick={() => this.toggleDisplay(3)}>Contact</p>
                 </div>
             </div>
         )

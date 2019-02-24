@@ -4,6 +4,10 @@ import './projects.css';
 
 export default class Projects extends React.Component {
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     render() {
 
         let isVisible = 'hide projectsHome';
@@ -16,7 +20,7 @@ export default class Projects extends React.Component {
 
             <div id='projectsHome' className={isVisible}>
 
-                <h3 className='sectionTitle'>My Projects:</h3>
+                <h3 className='sectionTitle' id='colorIconGrn'>My Projects:</h3>
                 <div className='projectItem'>
                     <h4 className='projectTitle' >Password Checker</h4>
                     <img src="https://github.com/BrotherFatcake/passwordcheck/blob/master/world-background2.svg.png?raw=true"

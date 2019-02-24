@@ -3,6 +3,10 @@ import React from 'react'
 import './contact.css';
 
 export default class Contact extends React.Component {
+    
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
 
     render() {
 
@@ -16,7 +20,7 @@ export default class Contact extends React.Component {
 
             <div id='mainContact' className={isVisible}>
 
-                <h3 className='sectionTitle'>Contact Me:</h3>
+                <h3 className='sectionTitle' id='colorIconBlu'>Contact Me:</h3>
                 <br />
                 <p className='contactContent' >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et

@@ -57,19 +57,23 @@ export default class PortfolioMain extends React.Component {
 
     console.log('state: ', this.state)
 
-    let mainDisplay;
+    let mainDisplay, colorIcon;
 
     if (this.state.mainVisible === 0) {
       mainDisplay = <Home mainVisible={this.state.mainVisible} />
+      colorIcon = 'colorIconBlk'
     }
     if (this.state.mainVisible === 1) {
       mainDisplay = <About mainVisible={this.state.mainVisible} />
+      colorIcon = 'colorIconRd'
     }
     if (this.state.mainVisible === 2) {
       mainDisplay = <Projects mainVisible={this.state.mainVisible} />
+      colorIcon = 'colorIconGrn'
     }
     if (this.state.mainVisible === 3) {
       mainDisplay = <Contact mainVisible={this.state.mainVisible} />
+      colorIcon = 'colorIconBlu'
     }
 
     return (
@@ -78,7 +82,7 @@ export default class PortfolioMain extends React.Component {
       <div id='main' className='main'>
 
         <div className='menuDiv'>
-          <div className='navIcon' id='navIcon' onClick={() => this.toggleNav()}>&#9776;</div>
+          <div className='navIcon' id={colorIcon} onClick={() => this.toggleNav()}>&#9776;</div>
           <MainNav toggleNav={(mainVal) => this.toggleNav(mainVal)} navVisible={this.state.navVisible}
             toggleMain={(mainVal) => this.toggleMain(mainVal)} mainVisible={this.state.mainVisible} />
         </div>
@@ -94,8 +98,8 @@ export default class PortfolioMain extends React.Component {
 
 
           <footer>
-          <div className='closeTag'>&lt; / &gt;</div>
-          
+          <div className='closeTag' id={colorIcon}>&lt; / &gt;</div>
+
             <p className='footerLink'>
                 <a href="https://www.freepik.com/" target='_blank' rel='noopener noreferrer'>Images created by freepik - www.freepik.com</a></p>
           </footer>
