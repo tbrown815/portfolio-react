@@ -12,8 +12,7 @@ overflow: hidden;
 }
 
 #selHomeNav, #selAboutNav, #selProjectsNav, #selContactNav {
-  font-family: 'Bangers', cursive !important;
-  font-weight: lighter; 
+  font-weight: bolder; 
   color: whitesmoke;
 
 }
@@ -51,6 +50,8 @@ left: 0;
 transition: 0.5s;
 overflow: scroll;
 z-index: 10;
+font-family: 'Bangers', cursive !important;
+font-weight: lighter; 
 
 }
 
@@ -68,7 +69,7 @@ color: whitesmoke;
 }
 
 .navMenuSelect {
-font-size: 25px;
+font-size: 30px;
 }
 
 .menuItems {
@@ -79,7 +80,7 @@ margin-top: 30%;
 position: absolute;
 top: 2%;
 right: 5%;
-font-size: 20px;
+font-size: 25px;
 margin-left: 50px;
 }
 

@@ -37,6 +37,7 @@ export default class Projects extends React.Component {
                         cupidatat non proident,
                         sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
+
                 </div>
                 <div className='projectItem'>
                     <h4 className='projectTitle' >Challenge Accepted</h4>
@@ -72,7 +73,6 @@ export default class Projects extends React.Component {
                         sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
                 </div>
-
             </div>
         )
     }

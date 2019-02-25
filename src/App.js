@@ -28,6 +28,9 @@ export default class PortfolioMain extends React.Component {
     */
   }
 
+returnTop() {
+    window.scrollTo(0, 0)
+}
 
   toggleNav() {
 
@@ -45,7 +48,6 @@ export default class PortfolioMain extends React.Component {
     console.log('mainVal: ', mainVal)
 
     this.setState({
-      // navVisible: !this.state.navVisible,
       mainVisible: mainVal
     })
 
@@ -57,7 +59,7 @@ export default class PortfolioMain extends React.Component {
 
     console.log('state: ', this.state)
 
-    let mainDisplay, colorIcon;
+    let mainDisplay, colorIcon, showUpIcon;
 
     if (this.state.mainVisible === 0) {
       mainDisplay = <Home mainVisible={this.state.mainVisible} />
@@ -70,6 +72,7 @@ export default class PortfolioMain extends React.Component {
     if (this.state.mainVisible === 2) {
       mainDisplay = <Projects mainVisible={this.state.mainVisible} />
       colorIcon = 'colorIconGrn'
+      showUpIcon = <div className='upIcon' id={colorIcon} onClick={() => this.returnTop()}>&#8607;</div>
     }
     if (this.state.mainVisible === 3) {
       mainDisplay = <Contact mainVisible={this.state.mainVisible} />
@@ -85,32 +88,33 @@ export default class PortfolioMain extends React.Component {
           <div className='navIcon' id={colorIcon} onClick={() => this.toggleNav()}>&#9776;</div>
           <MainNav toggleNav={(mainVal) => this.toggleNav(mainVal)} navVisible={this.state.navVisible}
             toggleMain={(mainVal) => this.toggleMain(mainVal)} mainVisible={this.state.mainVisible} />
+            {showUpIcon}
         </div>
+  
+        <div className='displayDiv' id='displayDiv'>
 
-        <div className='displayDiv'>
+            {mainDisplay}
 
-          {mainDisplay}
-
-          <br /><br />
+            <br /><br />
 
 
-        </div>
+          </div>
 
 
           <footer>
-          <div className='closeTag' id={colorIcon}>&lt; / &gt;</div>
+            <div className='closeTag' id={colorIcon}>&lt; / &gt;</div>
 
             <p className='footerLink'>
-                <a href="https://www.freepik.com/" target='_blank' rel='noopener noreferrer'>Images created by freepik - www.freepik.com</a></p>
+              <a href="https://www.freepik.com/" target='_blank' rel='noopener noreferrer'>Images created by freepik - www.freepik.com</a></p>
           </footer>
 
-      </div>
+        </div>
 
 
 
-    )
-
-  }
-
-}
-
+        )
+    
+      }
+    
+    }
+    

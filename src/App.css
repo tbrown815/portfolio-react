@@ -14,12 +14,13 @@ overflow: auto;
 background-color: #e8e8e8;
 }
 
-.navIcon, .displayDiv, footer {
+.navIcon, .upIcon, .displayDiv, footer {
 border: 0px solid red;
 
 }
 
 .menuDiv {
+
 }
 
 .displayDiv {
@@ -58,7 +59,7 @@ margin-bottom: 10%;
 }
 
 
-.navIcon, .closeTag, .sectionTitle {
+.navIcon, .upIcon, .closeTag, .sectionTitle {
 font-family: 'Bangers', cursive !important;
 font-weight: lighter; 
 }
@@ -73,6 +74,18 @@ margin-top: 1%;
 
 .navIcon::after {
 content: ' Menu';
+}
+
+.upIcon {
+  font-size: 25px;
+  bottom: 0;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+}
+
+.upIcon::after {
+  content: ' TOP';
 }
 
 
@@ -99,7 +112,7 @@ margin-bottom: 5%;
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 480px) {
 
-  .navIcon {
+  .navIcon, .upIcon {
   margin-left: -3%;
   }
 
@@ -112,7 +125,7 @@ margin-bottom: 5%;
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 850px) {
 
-  .navIcon {
+  .navIcon, .upIcon {
   margin-left: 1%;
   }
 
@@ -121,7 +134,7 @@ margin-bottom: 5%;
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 850px) {
 
-  .navIcon::after{
+  .navIcon::after, .upIcon::after {
   content: '';
   }
 
