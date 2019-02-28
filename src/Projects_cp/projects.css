@@ -15,6 +15,23 @@ font-size: 25px;
 margin-bottom: 12%;
 }
 
+
+.projectIMG {
+float: left;
+width: 35%;
+padding-right: .5%;
+}
+
+.projectContent {
+}
+
+.projectSection {
+margin-top: 1%;
+margin-bottom: 15%;
+}
+
+
+
 @media only screen and (min-device-width: 0px) and (max-device-width: 480px) {
 
     .projectTitle {

@@ -23,23 +23,20 @@ export default class About extends React.Component {
                 <h3 className='sectionTitle' id='colorIconRd'>About Me:</h3>
                 <br />
                 <p className='aboutContent' >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor
-                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                I'm a recent graduate of the Thinkful fullstack flex course.  Whether it's with a keyboard or my 
+                hands I find building things to be extremely enjoyable and satisfying.  The hunt to find a usable solution 
+                to unlock a new problem becomes an obsession that could rival Capt. Ahab!  I have a background in 
+                software quality assurance which I feel gives me a unique perspective compared to a typical developer.  
+                Over the years I found that I've become more and more interested in developing and building the products 
+                and not just testing them. 
+
             </p>
                 <br />
                 <p className='aboutContent' >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor
-                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                During my down time you will find me spending time with my family, working on home improvement 
+                projects, and over the last year I've rekindled a love of Strongman and other strength sports.  
+                I'm always looking for something to keep me engaged and actively enjoy learning about solutions 
+                to projects around the house and in life.
             </p>
 
             </div>

@@ -16,7 +16,7 @@ export default class PortfolioMain extends React.Component {
 
     this.state = {
       navVisible: false,
-      mainVisible: 0
+      mainVisible: 2
     }
 
     /*
@@ -31,6 +31,8 @@ export default class PortfolioMain extends React.Component {
 returnTop() {
     window.scrollTo(0, 0)
 }
+
+//pageYOffset look at
 
   toggleNav() {
 
