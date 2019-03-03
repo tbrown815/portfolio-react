@@ -1,13 +1,13 @@
 {
-  "main.css": "tbrowndev.brownscastle.com/static/css/main.4cb1fb04.chunk.css",
-  "main.js": "tbrowndev.brownscastle.com/static/js/main.2c51611a.chunk.js",
-  "main.js.map": "tbrowndev.brownscastle.com/static/js/main.2c51611a.chunk.js.map",
-  "runtime~main.js": "tbrowndev.brownscastle.com/static/js/runtime~main.7331ec94.js",
-  "runtime~main.js.map": "tbrowndev.brownscastle.com/static/js/runtime~main.7331ec94.js.map",
-  "static/js/2.b2f5ab12.chunk.js": "tbrowndev.brownscastle.com/static/js/2.b2f5ab12.chunk.js",
-  "static/js/2.b2f5ab12.chunk.js.map": "tbrowndev.brownscastle.com/static/js/2.b2f5ab12.chunk.js.map",
-  "index.html": "tbrowndev.brownscastle.com/index.html",
-  "precache-manifest.ec33f9e5139a6cf4431e90cb8f457b7c.js": "tbrowndev.brownscastle.com/precache-manifest.ec33f9e5139a6cf4431e90cb8f457b7c.js",
-  "service-worker.js": "tbrowndev.brownscastle.com/service-worker.js",
-  "static/css/main.4cb1fb04.chunk.css.map": "tbrowndev.brownscastle.com/static/css/main.4cb1fb04.chunk.css.map"
+  "main.css": "/static/css/main.4cb1fb04.chunk.css",
+  "main.js": "/static/js/main.e2942f9d.chunk.js",
+  "main.js.map": "/static/js/main.e2942f9d.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.fdfcfda2.js",
+  "runtime~main.js.map": "/static/js/runtime~main.fdfcfda2.js.map",
+  "static/js/2.b2f5ab12.chunk.js": "/static/js/2.b2f5ab12.chunk.js",
+  "static/js/2.b2f5ab12.chunk.js.map": "/static/js/2.b2f5ab12.chunk.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.7208555a6836a005b9e1c6a4b852b6bc.js": "/precache-manifest.7208555a6836a005b9e1c6a4b852b6bc.js",
+  "service-worker.js": "/service-worker.js",
+  "static/css/main.4cb1fb04.chunk.css.map": "/static/css/main.4cb1fb04.chunk.css.map"
 }
