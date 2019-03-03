@@ -6,7 +6,6 @@ import About from './About_cp/about'
 import Contact from './Contact_cp/contact'
 import Projects from './Projects_cp/projects'
 
-
 import './App.css'
 
 export default class PortfolioMain extends React.Component {
@@ -31,8 +30,6 @@ export default class PortfolioMain extends React.Component {
 returnTop() {
     window.scrollTo(0, 0)
 }
-
-//pageYOffset look at
 
   toggleNav() {
 

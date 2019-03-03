@@ -1,58 +1,41 @@
-
-
 .mainContact.hide {
     visibility: hidden;
 }
-   
-.mainContact.display {
-visibility: visible;
-}
 
+.mainContact.display {
+    visibility: visible;
+}
 
 .contactContent {
     font-size: 25px;
     margin-bottom: 5%;
-  }
+}
 
-.contactMethods {
-  font-size: 18px;
+.contactLinks {
+    display: inline-block;
 }
 
 .contactIMG {
-  width: 10%;
+    width: 20%;
 }
 
-ul.contactMethods {
-  column-count: 3;
-  column-rule-style: solid;
-  column-gap: 2;
-
+.link img {
+    margin: auto;
+    vertical-align: middle;
+    display: inline-block;
 }
-
 
 a, a:visited {
     color: black;
     text-decoration: none;
 }
-/*
-a:hover {
-    color: #818181;
-    font-weight: bold;
-}
-  */
-  
+
 @media only screen and (min-device-width: 0px) and (max-device-width: 480px) {
-  
     .contactContent {
         font-size: 18px;
         margin-bottom: 5%;
-      }
-
-      .contactMethods {
-        font-size: 15px;
-        margin-left: -35%;
-
-      }
-        
-  
-  }
+    }
+    .contactLinks {
+        font-size: 18px;
+    }
+}

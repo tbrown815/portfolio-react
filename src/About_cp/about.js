@@ -30,9 +30,9 @@ export default class About extends React.Component {
                     and others I have found that I want to have a greater part in the developement cycle by creating the products,
                     not just testing them.
                     <br /><br />
-                    In my down time you will find me spending time with my family, working on home improvement projects, and over the
-                    last year I've rekindled a love of Strongman and other strength sports.  I'm always looking for something to keep
-                    me engaged and actively enjoy learning about solutions to projects around the house and in life.
+                    In my down time you will find me spending time with my family, working on home improvement projects.  
+                    I'm always looking for something to keep me engaged and actively enjoy learning about solutions to 
+                    projects around the house and in life.
 
                 </p>
                 <br />

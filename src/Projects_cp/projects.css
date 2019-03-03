@@ -24,32 +24,25 @@
 .projectContent {
     font-size: 25px;
     margin-bottom: 3%;
-    width: 113%;
+}
+
+.projectIMG img {
+    width: 100%;
 }
 
 .projectIMG {
-    float: left;
-}
-
-img {
-    width: 98%;
+    float: right;
 }
 
 .imageTech {
     margin-top: 5%;
 }
 
-.techIMG {
-    margin-right: 1%;
-}
-
-.repoLink {
-    margin-top: 2%;
-}
-
-.linkText {
-    vertical-align: -60%;
-    font-size: 15px;
+.repoLink img,
+.techBadge img {
+    margin: auto;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 a,
@@ -59,7 +52,6 @@ a:visited {
 
 a:hover {
     color: #818181;
-    font-weight: bold;
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 480px) {
@@ -71,77 +63,70 @@ a:hover {
     }
     .projectIMG {
         float: left;
-        width: 110%;
+        width: 100%;
         margin-bottom: 3%;
     }
-    .techIMG {
-        vertical-align: top;
-        margin-left: 1%;
-        width: 8%;
+    .demoLinks,
+    .techBadge {
+        margin-bottom: 2%;
     }
-    .linkText {
-        vertical-align: 20%;
-        font-size: 15px;
+    .techIMG,
+    .linkIMG {
+        width: 8%;
+        margin-right: 2% !important;
     }
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 800px) {
     .projectIMG {
         float: left;
-        width: 110%;
+        width: 100%;
         margin-bottom: 3%;
     }
-    .techIMG {
-        vertical-align: top;
-        margin-left: 1%;
-        width: 6%;
+    .demoLinks,
+    .techBadge {
+        margin-bottom: 1%;
     }
-    .linkText {
-        vertical-align: -10%;
-        font-size: 15px;
+    .techIMG,
+    .linkIMG {
+        width: 7%;
+        margin-right: 1% !important;
     }
+  
 }
 
 @media only screen and (min-device-width: 801px) and (max-device-width: 1380px) {
     .projectIMG {
-        float: left;
-        width: 45%;
+        float: right;
+        width: 40%;
         margin-bottom: 3%;
     }
-    .imageTech {
-        margin-top: 3%;
-        
-
+    .demoLinks,
+    .techBadge {
+        margin-bottom: 1%;
     }
-    .techIMG {
-        vertical-align: top;
-        margin-left: 1%;
-        width: 4%;
-    }
-    .linkText {
-        vertical-align: -40%;
-        font-size: 15px;
+    .techIMG,
+    .linkIMG {
+        width: 5%;
+        margin-right: 1% !important;
     }
 }
 
 @media only screen and (min-device-width: 1381px) and (max-device-width: 2050px) {
     .projectIMG {
-        float: left;
+        float: right;
         width: 45%;
         margin-bottom: 3%;
+        margin-left: 2%
     }
-    .imageTech {
-        margin-top: 2%;
-        margin-left: 41%;
+    .demoLinks,
+    .techBadge {
+        margin-bottom: 1%;
     }
-    .techIMG {
-        vertical-align: top;
-        margin-left: 1%;
+    .techIMG,
+    .linkIMG {
         width: 4%;
-    }
-    .linkText {
-        vertical-align: -40%;
-        font-size: 15px;
+        margin-right: 1% !important;
     }
 }
 
@@ -150,20 +135,18 @@ a:hover {
         padding-top: 4%;
     }
     .projectIMG {
-        float: left;
-        width: 60%;
+        float: right;
+        width: 50%;
         margin-bottom: 3%;
+        margin-left: 2%
     }
-    .imageTech {
-        margin-top: 2%;
+    .demoLinks,
+    .techBadge {
+        margin-bottom: 1%;
     }
-    .techIMG {
-        vertical-align: top;
-        margin-left: 1%;
-        width: 1.5%;
-    }
-    .linkText {
-        vertical-align: -50%;
-        font-size: 15px;
+    .techIMG,
+    .linkIMG {
+        width: 3%;
+        margin-right: 1% !important;
     }
 }

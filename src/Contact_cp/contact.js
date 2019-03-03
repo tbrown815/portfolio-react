@@ -34,11 +34,18 @@ export default class Contact extends React.Component {
                     Below are different ways to contact me:
                     <br /> <br />
 
-                    <ul className='contactMethods'>
-                        <li><a href='mailto:tbrown@brownscastle.com'  target='_blank' rel='noopener noreferrer'>{email}</a></li>
-                        <li><a href='https://github.com/BrotherFatcake' target='_blank' rel='noopener noreferrer'>{githubpro} </a></li>
-                        <li><a href='https://www.linkedin.com/in/tyler-brown-716431b' target='_blank' rel='noopener noreferrer'>{linkedin}</a></li>
-                    </ul>
+                    <div className='contactLinks'>
+                    <a  className='link' href='mailto:tbrown@brownscastle.com'  target='_blank' rel='noopener noreferrer'>{email} E-Mail Me</a>
+                    </div>
+                    <div className='contactLinks'>
+                    <a className='link' href='https://github.com/BrotherFatcake' target='_blank' rel='noopener noreferrer'>{githubpro} GitHub Profile</a>
+                    </div>
+                    <div className='contactLinks'>
+                    <a className='link' href='https://www.linkedin.com/in/tyler-brown-716431b' target='_blank' rel='noopener noreferrer'>{linkedin} LinkedIn Profile</a>
+                    </div>
+
+                    <br /> <br /><br /> <br />
+
 
                 </div>
 
