@@ -18,7 +18,7 @@ export default class PortfolioMain extends React.Component {
       mainVisible: 0
     }
 
-    /*
+    /* values available to use for compoenent display state
     mainVisible =
       Home = 0
       About = 1
@@ -27,10 +27,12 @@ export default class PortfolioMain extends React.Component {
     */
   }
 
-returnTop() {
+  //when page loads return to top
+  returnTop() {
     window.scrollTo(0, 0)
-}
+  }
 
+  //sets Nav state to visible/not visible
   toggleNav() {
 
     this.setState({
@@ -40,6 +42,7 @@ returnTop() {
 
   }
 
+  //sets the mainVisible state value to determine the component to display
   toggleMain(mainVal) {
 
     this.setState({
@@ -53,10 +56,11 @@ returnTop() {
   render() {
 
     let mainDisplay, colorIcon, showUpIcon, footerLink
-    
-    let techIcon = <a href="https://fontawesome.com/license" target='_blank' rel='noopener noreferrer'>Icon Images created by Font Awesome - fontawesome.com</a>
-    
 
+    let techIcon = <a href="https://fontawesome.com/license" target='_blank' rel='noopener noreferrer'>Icon Images created by Font Awesome - fontawesome.com</a>
+
+    //IF statements to set values for different variable based on app state.
+      //also used to set the component being displayed to users
     if (this.state.mainVisible === 0) {
       mainDisplay = <Home mainVisible={this.state.mainVisible} />
       colorIcon = 'colorIconBlk'
@@ -86,34 +90,34 @@ returnTop() {
           <div className='navIcon' id={colorIcon} onClick={() => this.toggleNav()}>&#9776;</div>
           <MainNav toggleNav={(mainVal) => this.toggleNav(mainVal)} navVisible={this.state.navVisible}
             toggleMain={(mainVal) => this.toggleMain(mainVal)} mainVisible={this.state.mainVisible} />
-            {showUpIcon}
+          {showUpIcon}
         </div>
-  
+
         <div className='displayDiv' id='displayDiv'>
 
-            {mainDisplay}
+          {mainDisplay}
 
-            <br /><br />
+          <br /><br />
 
-
-          </div>
-
-
-          <footer>
-            <div className='closeTag' id={colorIcon}>&lt; / &gt;</div>
-
-            <p className='footerLink'>
-              {footerLink}
-            </p>
-          </footer>
 
         </div>
 
 
+        <footer>
+          <div className='closeTag' id={colorIcon}>&lt; / &gt;</div>
 
-        )
-    
-      }
-    
-    }
-    
+          <p className='footerLink'>
+            {footerLink}
+          </p>
+        </footer>
+
+      </div>
+
+
+
+    )
+
+  }
+
+}
+

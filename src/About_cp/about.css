@@ -1,21 +1,19 @@
-
-
 .mainAbout.hide {
-visibility: hidden;
+    visibility: hidden;
 }
 
 .mainAbout.display {
-visibility: visible;
+    visibility: visible;
 }
 
 .aboutContent {
-font-size: 25px;
-margin-bottom: 5%;
+    font-size: 25px;
+    margin-bottom: 5%;
 }
 
 ul.contentList {
     columns: 4;
-  }
+}
 
 li {
     list-style-type: none;
@@ -23,42 +21,35 @@ li {
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 480px) {
-
     .aboutContent {
-    font-size: 18px;
-    margin-bottom: 5%;
+        font-size: 18px;
+        margin-bottom: 5%;
     }
-
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 550px) {
-
     ul.contentList {
-    columns: 1;
+        columns: 1;
     }
     li {
-    margin-left: 25%;
+        margin-left: 25%;
     }
 }
 
 @media only screen and (min-device-width: 551px) and (max-device-width: 800px) {
-
     ul.contentList {
-    columns: 2;
+        columns: 2;
     }
-
     li {
-    margin-left: 15%;
+        margin-left: 15%;
     }
 }
 
 @media only screen and (min-device-width: 801px) and (max-device-width: 1000px) {
-
     ul.contentList {
-    columns: 3;
+        columns: 3;
     }
-
     li {
-    margin-left: 10%;
+        margin-left: 10%;
     }
 }

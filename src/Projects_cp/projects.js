@@ -39,74 +39,74 @@ export default class Projects extends React.Component {
 
             <div id='projectsHome' className={isVisible}>
 
-            <h3 className='sectionTitle' id='colorIconGrn'> My Projects:</h3>
+                <h3 className='sectionTitle' id='colorIconGrn'> My Projects:</h3>
 
-            
-            <div className='projectItem'>
-                <h4 className='projectTitle' >Password Checker</h4>
-                <div className='projectSection'>
-                    <div className='projectIMG section' >
-                        <img src={require('../images/passcheckScreenshot.png')}
-                            alt='passwordcheck' />
-                    </div>
-                    <div className='projectContent' >
-                        I created this project to help people fix their terrible passwords.  Many people don't take the time to come
-                        up with a good password.  People use their spouse's, kids', or pet's names and maybe throw some numbers on to the
-                        end if it's required.  Then sit back and think "This is strong, no one will get this!".  This application
+
+                <div className='projectItem'>
+                    <h4 className='projectTitle' >Password Checker</h4>
+                    <div className='projectSection'>
+                        <div className='projectIMG section' >
+                            <img src={require('../images/passcheckScreenshot.png')}
+                                alt='passwordcheck' />
+                        </div>
+                        <div className='projectContent' >
+                            I created this project to help people fix their terrible passwords.  Many people don't take the time to come
+                            up with a good password.  People use their spouse's, kids', or pet's names and maybe throw some numbers on to the
+                            end if it's required.  Then sit back and think "This is strong, no one will get this!".  This application
                     allows a user to enter a password so that it can be compared to passwords stored in the compromised password database of '{pwnedLink}'.
-                            Additionally, users can create new passwords or pass phrases in the application and those new passwords are also compared to the
-                            compromised password database.
+                                    Additionally, users can create new passwords or pass phrases in the application and those new passwords are also compared to the
+                                    compromised password database.
             <div className='imageTech'>
-            <div className='techBadge'>
-                            {htmlIcon}{cssIcon}{jsIcon}{jQueryIcon}
-                            </div>
-                            <div className='demoLinks'>
-                                <a className='repoLink' href='https://github.com/BrotherFatcake/passwordcheck' target='_blank'
-                                    rel='noopener noreferrer'>{githubIcon} Access Repo</a>
-                            </div>
-                            <div className='demoLinks'>
-                            <a className='repoLink' href='https://brotherfatcake.github.io/passwordcheck/index.html' target='_blank'
-                                    rel='noopener noreferrer'>{liveSiteIcon} Access Live Site</a>
+                                <div className='techBadge'>
+                                    {htmlIcon}{cssIcon}{jsIcon}{jQueryIcon}
+                                </div>
+                                <div className='demoLinks'>
+                                    <a className='repoLink' href='https://github.com/BrotherFatcake/passwordcheck' target='_blank'
+                                        rel='noopener noreferrer'>{githubIcon} Access Repo</a>
+                                </div>
+                                <div className='demoLinks'>
+                                    <a className='repoLink' href='https://brotherfatcake.github.io/passwordcheck/index.html' target='_blank'
+                                        rel='noopener noreferrer'>{liveSiteIcon} Access Live Site</a>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
-
-            </div>
-            <div className='projectItem'>
-                <h4 className='projectTitle' >Challenge Accepted</h4>
-                <div className='projectSection'>
-                    <div className='projectIMG section' >
-                        <img src={require('../images/challengeAccScreenshot.png')}
-                            alt='challengeaccepted' />
-                    </div>
-                    <div className='projectContent' >
-                        I wanted to become fittish to be sure that I could keep up with a potential future child so I bought a fitness
-                        tracker.  The application was sufficient except for one place - challenges.  All of the challenges were geared towards steps,
-                        yet the tracker and its application documented floors, miles, activitive also.  Why were there no challenges for those data points?
-                        After looking around at other applications I noticed that seemed to be the trend - steps only. Boring!  In its current state users
-                        are able to document their steps and miles.My goal with this project is to create a place where users can track their activiities
-                        and challenge each other to steps as well as those additional data points.
-
+                <div className='projectItem'>
+                    <h4 className='projectTitle' >Challenge Accepted</h4>
+                    <div className='projectSection'>
+                        <div className='projectIMG section' >
+                            <img src={require('../images/challengeAccScreenshot.png')}
+                                alt='challengeaccepted' />
+                        </div>
+                        <div className='projectContent' >
+                            I wanted to become fittish to be sure that I could keep up with a potential future child so I bought a fitness
+                            tracker.  The application was sufficient except for one place - challenges.  All of the challenges were geared towards steps,
+                            yet the tracker and its application documented floors, miles, activitive also.  Why were there no challenges for those data points?
+                            After looking around at other applications I noticed that seemed to be the trend - steps only. Boring!  In its current state users
+                            are able to document their steps and miles.My goal with this project is to create a place where users can track their activiities
+                            and challenge each other to steps as well as those additional data points.
+    
             <div className='imageTech'>
-                            <div className='techBadge'>
-                                {htmlIcon}{cssIcon}{jsIcon}{jQueryIcon}{nodeIcon}{mongoIcon}
-                            </div>
-                            <div className='demoLinks'>
+                                <div className='techBadge'>
+                                    {htmlIcon}{cssIcon}{jsIcon}{jQueryIcon}{nodeIcon}{mongoIcon}
+                                </div>
+                                <div className='demoLinks'>
 
-                                <a className='repoLink' href='https://github.com/BrotherFatcake/challengeaccepted' target='_blank'
-                                    rel='noopener noreferrer'>{githubIcon} Access Repo</a>
-                            </div>
-                            <div className='demoLinks'>
+                                    <a className='repoLink' href='https://github.com/BrotherFatcake/challengeaccepted' target='_blank'
+                                        rel='noopener noreferrer'>{githubIcon} Access Repo</a>
+                                </div>
+                                <div className='demoLinks'>
 
-                                <a className='repoLink' href='https://mysterious-forest-20103.herokuapp.com/' target='_blank'
-                                    rel='noopener noreferrer'>{liveSiteIcon} Access Live Site</a>
+                                    <a className='repoLink' href='https://mysterious-forest-20103.herokuapp.com/' target='_blank'
+                                        rel='noopener noreferrer'>{liveSiteIcon} Access Live Site</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-            </div>
+                </div>
 
                 <div className='projectItem'>
                     <h4 className='projectTitle' >Dread Pirate Eats</h4>

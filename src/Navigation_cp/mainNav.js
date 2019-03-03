@@ -4,6 +4,7 @@ import './mainNav.css'
 
 export default class MainNav extends React.Component {
 
+    //sets the mainVisible variable when van item is clicked and passes it to App.js to set the state
     toggleDisplay(val) {
 
         let mainVisible = val
@@ -14,12 +15,15 @@ export default class MainNav extends React.Component {
 
     render() {
 
+        //default visibility of component is hidden
         let isVisible = 'hide navMenu';
 
+        //if navVisible is true this component will display
         if (this.props.navVisible) {
             isVisible = 'display navMenu';
         }
 
+        //depending on value of mainVisible different CSS will be set for the nav menu
         let homeMenu, aboutMenu, projectsMenu, contactMenu, navMenu
 
         if (this.props.mainVisible === 0) {
@@ -39,7 +43,7 @@ export default class MainNav extends React.Component {
             navMenu = 'navMenuContact'
         }
 
-        /*
+        /* values available to use for compoenent display state
         mainVisible =
         Home = 0
         About = 1

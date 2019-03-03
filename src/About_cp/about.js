@@ -4,14 +4,17 @@ import './about.css';
 
 export default class About extends React.Component {
 
+    //when component loads return to top of window
     componentDidMount() {
         window.scrollTo(0, 0)
     }
 
     render() {
 
+        //default visibility of component is hidden
         let isVisible = 'hide mainAbout';
 
+        //if mainVisible is 2 this component will display
         if (this.props.mainVisible === 1) {
             isVisible = 'display mainAbout';
         }
@@ -23,15 +26,15 @@ export default class About extends React.Component {
                 <h3 className='sectionTitle' id='colorIconRd'>About Me:</h3>
                 <br />
                 <p className='aboutContent' >
-                    I'm a recent graduate of the Thinkful fullstack flex course.  I find building or improving things to be 
+                    I'm a recent graduate of the Thinkful fullstack flex course.  I find building or improving things to be
                     enjoyable and satisfying.  I have a background in software quality assurance which I feel gives me a unique
                     perspective that many developers may not have. I am dedicated to the products I support and take pride in knowing
                     that they will benefit all who use them.  Over the years working as part of project teams with developers
                     and others I have found that I want to have a greater part in the developement cycle by creating the products,
                     not just testing them.
                     <br /><br />
-                    In my down time you will find me spending time with my family, working on home improvement projects.  
-                    I'm always looking for something to keep me engaged and actively enjoy learning about solutions to 
+                    In my down time you will find me spending time with my family, working on home improvement projects.
+                    I'm always looking for something to keep me engaged and actively enjoy learning about solutions to
                     projects around the house and in life.
 
                 </p>
