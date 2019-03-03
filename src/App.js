@@ -16,7 +16,7 @@ export default class PortfolioMain extends React.Component {
 
     this.state = {
       navVisible: false,
-      mainVisible: 2
+      mainVisible: 3
     }
 
     /*
@@ -36,8 +36,6 @@ returnTop() {
 
   toggleNav() {
 
-    console.log('ham clicked!')
-
     this.setState({
       navVisible: !this.state.navVisible,
 
@@ -46,8 +44,6 @@ returnTop() {
   }
 
   toggleMain(mainVal) {
-
-    console.log('mainVal: ', mainVal)
 
     this.setState({
       mainVisible: mainVal
@@ -59,9 +55,10 @@ returnTop() {
 
   render() {
 
-    console.log('state: ', this.state)
-
-    let mainDisplay, colorIcon, showUpIcon, techIcon;
+    let mainDisplay, colorIcon, showUpIcon, footerLink
+    
+    let techIcon = <a href="https://fontawesome.com/license" target='_blank' rel='noopener noreferrer'>Icon Images created by Font Awesome - fontawesome.com</a>
+    
 
     if (this.state.mainVisible === 0) {
       mainDisplay = <Home mainVisible={this.state.mainVisible} />
@@ -75,11 +72,12 @@ returnTop() {
       mainDisplay = <Projects mainVisible={this.state.mainVisible} />
       colorIcon = 'colorIconGrn'
       showUpIcon = <div className='upIcon' id={colorIcon} onClick={() => this.returnTop()}>&#8607;</div>
-      techIcon = <a href="https://fontawesome.com/license" target='_blank' rel='noopener noreferrer'>Icon Images created by Font Awesome - fontawesome.com</a>
+      footerLink = techIcon
     }
     if (this.state.mainVisible === 3) {
       mainDisplay = <Contact mainVisible={this.state.mainVisible} />
       colorIcon = 'colorIconBlu'
+      footerLink = techIcon
     }
 
     return (
@@ -108,7 +106,7 @@ returnTop() {
             <div className='closeTag' id={colorIcon}>&lt; / &gt;</div>
 
             <p className='footerLink'>
-              {techIcon}
+              {footerLink}
             </p>
           </footer>
 

@@ -9,7 +9,7 @@
 .projectContent,
 .projectIMG,
 .imageTech {
-    border: 1px solid red;
+    border: 0px solid red;
 }
 
 .projectSection {
@@ -24,7 +24,7 @@
 .projectContent {
     font-size: 25px;
     margin-bottom: 3%;
-    width: 110%;
+    width: 113%;
 }
 
 .projectIMG {
@@ -32,7 +32,7 @@
 }
 
 img {
-    width: 100%;
+    width: 98%;
 }
 
 .imageTech {
@@ -109,7 +109,9 @@ a:hover {
         margin-bottom: 3%;
     }
     .imageTech {
-        margin-top: 2%;
+        margin-top: 3%;
+        
+
     }
     .techIMG {
         vertical-align: top;

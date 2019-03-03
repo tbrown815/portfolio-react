@@ -13,7 +13,7 @@ font-size: 25px;
 margin-bottom: 5%;
 }
 
-ul {
+ul.contentList {
     columns: 4;
   }
 
@@ -33,7 +33,7 @@ li {
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 550px) {
 
-    ul {
+    ul.contentList {
     columns: 1;
     }
     li {
@@ -43,7 +43,7 @@ li {
 
 @media only screen and (min-device-width: 551px) and (max-device-width: 800px) {
 
-    ul {
+    ul.contentList {
     columns: 2;
     }
 
@@ -54,7 +54,7 @@ li {
 
 @media only screen and (min-device-width: 801px) and (max-device-width: 1000px) {
 
-    ul {
+    ul.contentList {
     columns: 3;
     }
 

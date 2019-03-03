@@ -73,11 +73,13 @@ export default class Projects extends React.Component {
                                 alt='challengeaccepted' />
                         </div>
                         <div className='projectContent' >
-                            I wanted to become fittish so that I could be sure that I could keep up with a potential future child so I bought a fitness
+                            I wanted to become fittish to be sure that I could keep up with a potential future child so I bought a fitness
                             tracker.  The application was sufficient except for one place - challenges.  All of the challenges were geared towards steps,
                             yet the tracker and its application documented floors, miles, activitive also.  Why were there no challenges for those data points?
-                            After looking around at other applications I noticed that seemed to be the trend - steps only. Boring!  My goal with this project is
-                            to create a place where users can track their activiities and challenge each other to steps as well as those additional data points.
+                            After looking around at other applications I noticed that seemed to be the trend - steps only. Boring!  In its current state users 
+                            are able to document their steps and miles.My goal with this project is to create a place where users can track their activiities 
+                            and challenge each other to steps as well as those additional data points. 
+                            
                     <div className='imageTech'>
                                 {htmlIcon}{cssIcon}{jsIcon}{jQueryIcon}{nodeIcon}{mongoIcon}
                                 <p className='repoLink'><a href='https://github.com/BrotherFatcake/challengeaccepted' target='_blank' rel='noopener noreferrer'>{githubIcon}
