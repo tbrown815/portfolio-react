@@ -1,46 +1,167 @@
 .projectsHome.hide {
-visibility: hidden;
+    visibility: hidden;
 }
 
 .projectsHome.display {
-visibility: visible;
+    visibility: visible;
 }
 
-.projectTitle {
-font-size: 25px;
-}
-
-.projectContent {
-font-size: 25px;
-margin-bottom: 12%;
-}
-
-
-.projectIMG {
-float: left;
-width: 35%;
-padding-right: .5%;
-}
-
-.projectContent {
+.projectContent,
+.projectIMG,
+.imageTech {
+    border: 1px solid red;
 }
 
 .projectSection {
-margin-top: 1%;
-margin-bottom: 15%;
+    margin-top: 1%;
+    margin-bottom: 15%;
 }
 
+.projectTitle {
+    font-size: 25px;
+}
 
+.projectContent {
+    font-size: 25px;
+    margin-bottom: 3%;
+    width: 110%;
+}
+
+.projectIMG {
+    float: left;
+}
+
+img {
+    width: 100%;
+}
+
+.imageTech {
+    margin-top: 5%;
+}
+
+.techIMG {
+    margin-right: 1%;
+}
+
+.repoLink {
+    margin-top: 2%;
+}
+
+.linkText {
+    vertical-align: -60%;
+    font-size: 15px;
+}
+
+a,
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: #818181;
+    font-weight: bold;
+}
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 480px) {
-
     .projectTitle {
-    font-size: 20px;
+        font-size: 20px;
     }
-
-
     .projectContent {
-    font-size: 18px;
+        font-size: 18px;
     }
+    .projectIMG {
+        float: left;
+        width: 110%;
+        margin-bottom: 3%;
+    }
+    .techIMG {
+        vertical-align: top;
+        margin-left: 1%;
+        width: 8%;
+    }
+    .linkText {
+        vertical-align: 20%;
+        font-size: 15px;
+    }
+}
 
+@media only screen and (min-device-width: 481px) and (max-device-width: 800px) {
+    .projectIMG {
+        float: left;
+        width: 110%;
+        margin-bottom: 3%;
+    }
+    .techIMG {
+        vertical-align: top;
+        margin-left: 1%;
+        width: 6%;
+    }
+    .linkText {
+        vertical-align: -10%;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-device-width: 801px) and (max-device-width: 1380px) {
+    .projectIMG {
+        float: left;
+        width: 45%;
+        margin-bottom: 3%;
+    }
+    .imageTech {
+        margin-top: 2%;
+    }
+    .techIMG {
+        vertical-align: top;
+        margin-left: 1%;
+        width: 4%;
+    }
+    .linkText {
+        vertical-align: -40%;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-device-width: 1381px) and (max-device-width: 2050px) {
+    .projectIMG {
+        float: left;
+        width: 45%;
+        margin-bottom: 3%;
+    }
+    .imageTech {
+        margin-top: 2%;
+        margin-left: 41%;
+    }
+    .techIMG {
+        vertical-align: top;
+        margin-left: 1%;
+        width: 4%;
+    }
+    .linkText {
+        vertical-align: -40%;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-device-width: 2051px) {
+    .projectTitle {
+        padding-top: 4%;
+    }
+    .projectIMG {
+        float: left;
+        width: 60%;
+        margin-bottom: 3%;
+    }
+    .imageTech {
+        margin-top: 2%;
+    }
+    .techIMG {
+        vertical-align: top;
+        margin-left: 1%;
+        width: 1.5%;
+    }
+    .linkText {
+        vertical-align: -50%;
+        font-size: 15px;
+    }
 }

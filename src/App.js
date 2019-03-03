@@ -61,7 +61,7 @@ returnTop() {
 
     console.log('state: ', this.state)
 
-    let mainDisplay, colorIcon, showUpIcon;
+    let mainDisplay, colorIcon, showUpIcon, techIcon;
 
     if (this.state.mainVisible === 0) {
       mainDisplay = <Home mainVisible={this.state.mainVisible} />
@@ -75,6 +75,7 @@ returnTop() {
       mainDisplay = <Projects mainVisible={this.state.mainVisible} />
       colorIcon = 'colorIconGrn'
       showUpIcon = <div className='upIcon' id={colorIcon} onClick={() => this.returnTop()}>&#8607;</div>
+      techIcon = <a href="https://fontawesome.com/license" target='_blank' rel='noopener noreferrer'>Icon Images created by Font Awesome - fontawesome.com</a>
     }
     if (this.state.mainVisible === 3) {
       mainDisplay = <Contact mainVisible={this.state.mainVisible} />
@@ -107,7 +108,8 @@ returnTop() {
             <div className='closeTag' id={colorIcon}>&lt; / &gt;</div>
 
             <p className='footerLink'>
-              <a href="https://www.freepik.com/" target='_blank' rel='noopener noreferrer'>Images created by freepik - www.freepik.com</a></p>
+              {techIcon}
+            </p>
           </footer>
 
         </div>

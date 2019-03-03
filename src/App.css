@@ -28,14 +28,13 @@ margin-top: 1%;
 }
 
 .displayDiv, footer {
-float: right;
-width: 85%;
+margin-left: 10%;
+margin-right: 10%;
 }
 
 footer {
 font-size: 14px;
 margin-top: 10%;
-margin-left: 1%;
 margin-bottom: 1%;
 text-align: center;
 }
@@ -65,7 +64,7 @@ font-size: 25px;
 width: 15%;
 position: fixed;
 z-index: 1;
-margin-top: 1%;
+margin-top: 0%;
 }
 
 .navIcon::after {
