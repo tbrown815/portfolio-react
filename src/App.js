@@ -16,7 +16,7 @@ export default class PortfolioMain extends React.Component {
 
     this.state = {
       navVisible: false,
-      mainVisible: 3
+      mainVisible: 0
     }
 
     /*
