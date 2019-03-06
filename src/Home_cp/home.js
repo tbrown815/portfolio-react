@@ -31,7 +31,7 @@ export default class Home extends React.Component {
                     <p className='homeContent' >I'm a fullstack web developer ready to get to work and build something amazing!</p>
 
                     <p className='homeContent' >
-                        Please explore my site, I'm looking forward to hearing from you so we can get started.
+                        Please checkout my site and projects, I'm looking forward to hearing from you so we can get started.
                     </p>
 
                 </div>
