@@ -28,7 +28,7 @@ export default class Contact extends React.Component {
 
             <div id='mainContact' className={isVisible}>
 
-                <h3 className='sectionTitle' id='colorIconBlu'>Contact Me:</h3>
+                <h1 className='sectionTitle' id='colorIconBlu'>Contact Me:</h1>
                 <br />
                 <div className='contactContent' >
                     I'm looking forward to hearing from you so we can get to work!

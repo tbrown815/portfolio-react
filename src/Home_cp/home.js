@@ -21,16 +21,16 @@ export default class Home extends React.Component {
 
         return (
 
-            <div id='mainHome' className={isVisible}>
+            <div id='mainHome' className={isVisible} role='region'>
 
-                <div className='hiThere' id='colorIconBlk'>Hi there, I'm Tyler!</div>
+                <h1 className='hiThere' id='colorIconBlk'>Hi there, I'm Tyler!</h1>
 
                 <br />
 
-                <div className='welcomeSection' role="article">
+                <div className='welcomeSection' role='article'>
                     <p className='homeContent' >I'm a fullstack web developer ready to get to work and build something amazing!</p>
 
-                    <p className='homeContent' >
+                    <p className='homeContent' role='article'>
                         Please checkout my site and projects, I'm looking forward to hearing from you so we can get started.
                     </p>
 

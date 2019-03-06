@@ -6,7 +6,7 @@
 
 body {
     background-color: #EEE;
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 20px;
     padding: 25px;
     margin: 0;
@@ -33,7 +33,7 @@ footer {
 
 footer a,
 footer a:visited {
-    color: #818181;
+    color: #666666;
 }
 
 footer a:hover {
@@ -43,14 +43,6 @@ footer a:hover {
 .closeTag {
     font-size: 70px;
     margin-bottom: 10%;
-}
-
-.navIcon,
-.upIcon,
-.closeTag,
-.sectionTitle {
-    font-family: 'Bangers', cursive !important;
-    font-weight: lighter;
 }
 
 .navIcon {

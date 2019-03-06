@@ -6,12 +6,6 @@
     visibility: visible;
 }
 
-.hiThere,
-.welcomeSection {
-    font-family: 'Bangers', cursive !important;
-    font-weight: lighter;
-}
-
 .hiThere {
     font-size: 50px;
 }

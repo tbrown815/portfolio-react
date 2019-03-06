@@ -84,16 +84,16 @@ export default class PortfolioMain extends React.Component {
     return (
 
 
-      <div id='main' className='main'>
+      <main id='main' className='main'>
 
         <div className='menuDiv'>
-          <div className='navIcon' id={colorIcon} onClick={() => this.toggleNav()}>&#9776;</div>
+          <div className='navIcon' id={colorIcon} role='navigation' onClick={() => this.toggleNav()}>&#9776;</div>
           <MainNav toggleNav={(mainVal) => this.toggleNav(mainVal)} navVisible={this.state.navVisible}
             toggleMain={(mainVal) => this.toggleMain(mainVal)} mainVisible={this.state.mainVisible} />
           {showUpIcon}
         </div>
 
-        <div className='displayDiv' id='displayDiv'>
+        <div className='displayDiv' id='displayDiv' role='region'>
 
           {mainDisplay}
 
@@ -111,7 +111,7 @@ export default class PortfolioMain extends React.Component {
           </p>
         </footer>
 
-      </div>
+      </main>
 
 
 
