@@ -43,35 +43,35 @@ export default class About extends React.Component {
                     Technologies and resources that I've used in my projects:
                     <br /><br />
 
-                    <ul className='contentList' role='list'>
-                        <li role='listitem'>bcryptjs</li>
-                        <li role='listitem'>Chai/Chai-http</li>
-                        <li role='listitem'>CORS</li>
-                        <li role='listitem'>CSS</li>
-                        <li role='listitem'>Enzyme</li>
-                        <li role='listitem'>Express.js</li>
-                        <li role='listitem'>Faker</li>
-                        <li role='listitem'>Git/GitHub</li>
-                        <li role='listitem'>Heroku</li>
-                        <li role='listitem'>HTML </li>
-                        <li role='listitem'>JavaScript </li>
-                        <li role='listitem'>Jest</li>
-                        <li role='listitem'>JQuery </li>
-                        <li role='listitem'>JSON Web Token</li>
-                        <li role='listitem'>JSX</li>
-                        <li role='listitem'>jwt-decode</li>
-                        <li role='listitem'>mLab</li>
-                        <li role='listitem'>Mocha</li>
-                        <li role='listitem'>Mongo DB</li>
-                        <li role='listitem'>Mongoose</li>
-                        <li role='listitem'>Morgan</li>
-                        <li role='listitem'>Node.js</li>
-                        <li role='listitem'>Passport.js</li>
-                        <li role='listitem'>Postman</li>
-                        <li role='listitem'>React-Redux</li>
-                        <li role='listitem'>ReactJS</li>
-                        <li role='listitem'>Redux-Thunk</li>
-                        <li role='listitem'>Travis CI</li>
+                    <ul className='contentList'>
+                        <li>bcryptjs</li>
+                        <li>Chai/Chai-http</li>
+                        <li>CORS</li>
+                        <li>CSS</li>
+                        <li>Enzyme</li>
+                        <li>Express.js</li>
+                        <li>Faker</li>
+                        <li>Git/GitHub</li>
+                        <li>Heroku</li>
+                        <li>HTML </li>
+                        <li>JavaScript </li>
+                        <li>Jest</li>
+                        <li>JQuery </li>
+                        <li>JSON Web Token</li>
+                        <li>JSX</li>
+                        <li>jwt-decode</li>
+                        <li>mLab</li>
+                        <li>Mocha</li>
+                        <li>Mongo DB</li>
+                        <li>Mongoose</li>
+                        <li>Morgan</li>
+                        <li>Node.js</li>
+                        <li>Passport.js</li>
+                        <li>Postman</li>
+                        <li>React-Redux</li>
+                        <li>ReactJS</li>
+                        <li>Redux-Thunk</li>
+                        <li>Travis CI</li>
 
                     </ul>
 

@@ -20,14 +20,14 @@ li {
     margin-bottom: 3px;
 }
 
-@media only screen and (min-device-width: 0px) and (max-device-width: 480px) {
+@media only screen and (min-width: 0px) and (max-width: 480px) {
     .aboutContent {
         font-size: 18px;
         margin-bottom: 5%;
     }
 }
 
-@media only screen and (min-device-width: 0px) and (max-device-width: 550px) {
+@media only screen and (min-width: 0px) and (max-width: 550px) {
     ul.contentList {
         columns: 1;
     }
@@ -36,7 +36,7 @@ li {
     }
 }
 
-@media only screen and (min-device-width: 551px) and (max-device-width: 800px) {
+@media only screen and (min-width: 551px) and (max-width: 800px) {
     ul.contentList {
         columns: 2;
     }
@@ -45,7 +45,7 @@ li {
     }
 }
 
-@media only screen and (min-device-width: 801px) and (max-device-width: 1000px) {
+@media only screen and (min-width: 801px) and (max-width: 1000px) {
     ul.contentList {
         columns: 3;
     }

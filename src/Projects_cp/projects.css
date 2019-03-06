@@ -48,7 +48,7 @@ a:hover {
     color: #818181;
 }
 
-@media only screen and (min-device-width: 0px) and (max-device-width: 480px) {
+@media only screen and (min-width: 0px) and (max-width: 480px) {
     .projectTitle {
         font-size: 20px;
     }
@@ -71,7 +71,7 @@ a:hover {
     }
 }
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 800px) {
+@media only screen and (min-width: 481px) and (max-width: 800px) {
     .projectIMG {
         float: left;
         width: 100%;
@@ -88,7 +88,7 @@ a:hover {
     }
 }
 
-@media only screen and (min-device-width: 801px) and (max-device-width: 1380px) {
+@media only screen and (min-width: 801px) and (max-width: 1380px) {
     .projectIMG {
         float: right;
         width: 40%;
@@ -105,7 +105,7 @@ a:hover {
     }
 }
 
-@media only screen and (min-device-width: 1381px) and (max-device-width: 2050px) {
+@media only screen and (min-width: 1381px) and (max-width: 2050px) {
     .projectIMG {
         float: right;
         width: 45%;
@@ -123,7 +123,7 @@ a:hover {
     }
 }
 
-@media only screen and (min-device-width: 2051px) {
+@media only screen and (min-width: 2051px) {
     .projectTitle {
         padding-top: 4%;
     }

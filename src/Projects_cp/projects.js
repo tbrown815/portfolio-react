@@ -62,11 +62,11 @@ export default class Projects extends React.Component {
                                 </div>
                                 <div className='demoLinks'>
                                     <a className='repoLink' href='https://github.com/BrotherFatcake/passwordcheck' target='_blank'
-                                        rel='noopener noreferrer' role='link'>{githubIcon} Access Repo</a>
+                                        rel='noopener noreferrer'>{githubIcon} Access Repo</a>
                                 </div>
                                 <div className='demoLinks'>
                                     <a className='repoLink' href='https://brotherfatcake.github.io/passwordcheck/index.html' target='_blank'
-                                        rel='noopener noreferrer' role='link'>{liveSiteIcon} Access Live Site</a>
+                                        rel='noopener noreferrer'>{liveSiteIcon} Access Live Site</a>
                                 </div>
                             </div>
                         </div>
@@ -95,12 +95,12 @@ export default class Projects extends React.Component {
                                 <div className='demoLinks'>
 
                                     <a className='repoLink' href='https://github.com/BrotherFatcake/challengeaccepted' target='_blank'
-                                        rel='noopener noreferrer' role='link'>{githubIcon} Access Repo</a>
+                                        rel='noopener noreferrer'>{githubIcon} Access Repo</a>
                                 </div>
                                 <div className='demoLinks'>
 
                                     <a className='repoLink' href='https://mysterious-forest-20103.herokuapp.com/' target='_blank'
-                                        rel='noopener noreferrer' role='link'>{liveSiteIcon} Access Live Site</a>
+                                        rel='noopener noreferrer'>{liveSiteIcon} Access Live Site</a>
                                 </div>
                             </div>
                         </div>
@@ -129,17 +129,17 @@ export default class Projects extends React.Component {
                                 </div>
                                 <div className='demoLinks'>
                                     <a className='repoLink' href='https://github.com/BrotherFatcake/DreadPirateEats-React' target='_blank'
-                                        rel='noopener noreferrer' role='link'>{githubIcon} Access UI Repo</a>
+                                        rel='noopener noreferrer'>{githubIcon} Access UI Repo</a>
                                 </div>
                                 <div className='demoLinks'>
 
                                     <a className='repoLink' href='https://github.com/BrotherFatcake/DreadPirateEats-API' target='_blank'
-                                        rel='noopener noreferrer' role='link'>{githubIcon} Access API Repo</a>
+                                        rel='noopener noreferrer'>{githubIcon} Access API Repo</a>
                                 </div>
 
                                 <div className='demoLinks'>
                                     <a className='repoLink' href='https://shielded-eyrie-90605.herokuapp.com' target='_blank'
-                                        rel='noopener noreferrer' role='link'>{liveSiteIcon} Access Live Site</a>
+                                        rel='noopener noreferrer'>{liveSiteIcon} Access Live Site</a>
                                 </div>
 
                             </div>
