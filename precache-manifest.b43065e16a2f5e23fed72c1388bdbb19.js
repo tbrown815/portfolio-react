@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/js-brands.3094c423.svg"
   },
   {
-    "revision": "532b0b449ad3f43cc03f",
-    "url": "/static/css/main.b60b3b50.chunk.css"
+    "revision": "575c216d2b2f60818081",
+    "url": "/static/css/main.e31c76cd.chunk.css"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/static/media/css3-alt-brands.38445e8d.svg"
   },
   {
-    "revision": "532b0b449ad3f43cc03f",
-    "url": "/static/js/main.532b0b44.chunk.js"
+    "revision": "575c216d2b2f60818081",
+    "url": "/static/js/main.575c216d.chunk.js"
   },
   {
     "revision": "cdc525fef1db60b5ba5c2524d80a06ce",
@@ -52,27 +52,23 @@ self.__precacheManifest = [
     "url": "/static/media/Mongodb.43fd37e8.svg"
   },
   {
-    "revision": "addb5f74149260077c0e3c337bb05691",
-    "url": "/static/media/jqueryIcon2.addb5f74.png"
-  },
-  {
     "revision": "b231083fd6ed23326c876c1b268485f0",
     "url": "/static/media/power-off-solid.b231083f.svg"
   },
   {
-    "revision": "c610c082241bd493688c3042115f3583",
-    "url": "/static/media/passcheckScreenshot.c610c082.png"
+    "revision": "b2815b7a4da8381bcb10bafbb7cbe881",
+    "url": "/static/media/passcheckScreenshot.b2815b7a.png"
   },
   {
-    "revision": "987f003665275836535ab90378f7fbc2",
-    "url": "/static/media/challengeAccScreenshot.987f0036.png"
+    "revision": "d828dafdffef0b9ab1d5bfc4e6ec2a30",
+    "url": "/static/media/challengeAccScreenshot.d828dafd.png"
   },
   {
-    "revision": "282ec55753c2d2b8f1090cbd850e8a7a",
-    "url": "/static/media/dpeScreenshot.282ec557.png"
+    "revision": "14e708bcc2e52c68794de0c037d6ec12",
+    "url": "/static/media/dpeScreenshot.14e708bc.png"
   },
   {
-    "revision": "a332f74cd058e4f9a6aa4d0ae360ff1b",
+    "revision": "43cfbbbc37abef364e0bd9f33e31c81b",
     "url": "/index.html"
   }
 ];
