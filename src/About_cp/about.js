@@ -11,17 +11,9 @@ export default class About extends React.Component {
 
     render() {
 
-        //default visibility of component is hidden
-        let isVisible = 'hide mainAbout';
-
-        //if mainVisible is 2 this component will display
-        if (this.props.mainVisible === 1) {
-            isVisible = 'display mainAbout';
-        }
-
         return (
 
-            <div id='mainAbout' className={isVisible} role='region'>
+            <div id='mainAbout' role='region'>
 
                 <h1 className='sectionTitle' id='colorIconRd'>About Me:</h1>
                 <br />

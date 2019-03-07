@@ -11,14 +11,6 @@ export default class Projects extends React.Component {
 
     render() {
 
-        //default visibility of component is hidden
-        let isVisible = 'hide projectsHome';
-
-        //if mainVisible is 2 this component will display
-        if (this.props.mainVisible === 2) {
-            isVisible = 'display projectsHome';
-        }
-
         //link for link so description text is less cluttered looking in code
         let pwnedLink = <a href='https://haveibeenpwned.com/' target='_blank' rel='noopener noreferrer'>Have I Been Pwned</a>
 
@@ -37,25 +29,25 @@ export default class Projects extends React.Component {
 
         return (
 
-            <div id='projectsHome' className={isVisible} role='region'>
+            <div id='projectsHome' role='region'>
 
                 <h1 className='sectionTitle' id='colorIconGrn'> My Projects:</h1>
 
 
-                <div className='projectItem'>
+                <div className='projectItem' id='passCheck'>
                     <h2 className='projectTitle' >Password Checker</h2>
                     <div className='projectSection' role='article'>
                         <div className='projectIMG section' >
                             <img src={require('../images/passcheckScreenshot.png')}
                                 alt='passwordcheck' />
                         </div>
-                        <div className='projectContent'  role='article'>
+                        <div className='projectContent' role='article'>
                             I created this project to help people fix their terrible passwords.  Many people don't take the time to come
                             up with a good password.  People use their spouse's, kids', or pet's names and maybe throw some numbers on to the
                             end if it's required.  Then sit back and think "This is strong, no one will get this!".  This application
                     allows a user to enter a password so that it can be compared to passwords stored in the compromised password database of '{pwnedLink}'.
-                                    Additionally, users can create new passwords or pass phrases in the application and those new passwords are also compared to the
-                                    compromised password database.
+                                            Additionally, users can create new passwords or pass phrases in the application and those new passwords are also compared to the
+                                            compromised password database.
             <div className='imageTech'>
                                 <div className='techBadge'>
                                     {htmlIcon}{cssIcon}{jsIcon}{jQueryIcon}
@@ -73,8 +65,9 @@ export default class Projects extends React.Component {
                     </div>
 
                 </div>
+
                 <div className='projectItem'>
-                    <h2 className='projectTitle' >Challenge Accepted</h2>
+                    <h2 className='projectTitle' id='challege'>Challenge Accepted</h2>
                     <div className='projectSection' role='article'>
                         <div className='projectIMG section' >
                             <img src={require('../images/challengeAccScreenshot.png')}
@@ -87,7 +80,7 @@ export default class Projects extends React.Component {
                             After looking around at other applications I noticed that seemed to be the trend - steps only. Boring!  In its current state users
                             are able to document their steps and miles.My goal with this project is to create a place where users can track their activiities
                             and challenge each other to steps as well as those additional data points.
-    
+
             <div className='imageTech'>
                                 <div className='techBadge'>
                                     {htmlIcon}{cssIcon}{jsIcon}{jQueryIcon}{nodeIcon}{mongoIcon}
@@ -109,7 +102,7 @@ export default class Projects extends React.Component {
                 </div>
 
                 <div className='projectItem'>
-                    <h2 className='projectTitle' >Dread Pirate Eats</h2>
+                    <h2 className='projectTitle' id='dreadPirate'>Dread Pirate Eats</h2>
                     <div className='projectSection' role='article'>
                         <div className='projectIMG section' >
                             <img src={require('../images/dpeScreenshot.png')}

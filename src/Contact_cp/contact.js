@@ -11,14 +11,6 @@ export default class Contact extends React.Component {
 
     render() {
 
-        //default visibility of component is hidden
-        let isVisible = 'hide mainContact';
-
-        //if mainVisible is 3 this component will display
-        if (this.props.mainVisible === 3) {
-            isVisible = 'display mainContact';
-        }
-
         //reusable variables for icon badges
         let email = <img className='contactIMG' src={require('../images/envelope-solid.svg')} title='E-mail Me @ tbrown@brownscastle.com' alt='email Icon' />
         let githubpro = <img className='contactIMG' src={require('../images/github-brands.svg')} title='GitHub Profile' alt='GitHub Icon' />
@@ -26,7 +18,7 @@ export default class Contact extends React.Component {
 
         return (
 
-            <div id='mainContact' className={isVisible}>
+            <div id='mainContact'>
 
                 <h1 className='sectionTitle' id='colorIconBlu'>Contact Me:</h1>
                 <br />
