@@ -87,8 +87,6 @@ export default class PortfolioMain extends React.Component {
 
   render() {
 
-    console.log('state: ', this.state)
-
     let mainDisplay, colorIcon, showUpIcon, footerLink, navMenuDisplay
 
     let techIcon = <a href="https://fontawesome.com/license" target='_blank' rel='noopener noreferrer'>Icon Images created by Font Awesome - fontawesome.com</a>
