@@ -10,8 +10,13 @@ export default class MobileNav extends React.Component {
         let mainVisible = val
 
         this.props.toggleMain(mainVisible)
-
     }
+
+    setProject(project) {
+        
+        this.props.setProject(project)
+    }
+
 
     render() {
 
@@ -30,11 +35,11 @@ export default class MobileNav extends React.Component {
             projectsMenu = 'selProjectsNav'
             navMenu = 'navMenuProjects'
             passCheck = <p id={projectsMenu} className='navSubProjects' aria-label='menu item' onClick={() => this.props.toggleNav()}>
-                <a href='#passCheck'>Password Checker</a></p>
+                <span onClick={() => this.setProject('passCheck')}>Password Checker</span></p>
             challengeAccept = <p id={projectsMenu} className='navSubProjects' aria-label='menu item' onClick={() => this.props.toggleNav()}>
-                <a href='#challege'>Challenge Accepted</a></p>
+                <span onClick={() => this.setProject('challege')}>Challenge Accepted</span></p>
             dreadPirate = <p id={projectsMenu} className='navSubProjects' aria-label='menu item' onClick={() => this.props.toggleNav()}>
-                <a href='#dreadPirate'>Dread Pirate Eats</a></p>
+                <span onClick={() => this.setProject('dreadPirate')}>Dread Pirate Eats</span></p>
         }
         if (this.props.mainVisible === 3) {
             contactMenu = 'selContactNav'

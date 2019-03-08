@@ -26,6 +26,18 @@ export default class Projects extends React.Component {
         let githubIcon = <img className=' tech linkIMG' src={require('../images/github-brands.svg')} title='GitHub Repo' alt='github Icon' />
         let liveSiteIcon = <img className=' tech linkIMG' src={require('../images/power-off-solid.svg')} title='Live Site' alt='livesite Icon' />
 
+        if(this.props.project === 'passCheck') {
+            let element = document.getElementById('passCheck')
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+        if(this.props.project === 'challege') {
+            let element = document.getElementById('challege')
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+        if(this.props.project === 'dreadPirate') {
+            let element = document.getElementById('dreadPirate')
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
 
         return (
 

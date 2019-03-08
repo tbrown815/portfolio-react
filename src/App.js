@@ -19,7 +19,8 @@ export default class PortfolioMain extends React.Component {
       mobileNavVisible: false,
       navIcon: false,
       mainVisible: 0,
-      width: 0
+      width: 0,
+      project: null
     }
     window.addEventListener("resize", this.update);
 
@@ -37,6 +38,7 @@ export default class PortfolioMain extends React.Component {
     this.update();
   }
 
+  //get window width
   update = () => {
     if (window.innerWidth > 809) {
       this.setState({
@@ -56,9 +58,12 @@ export default class PortfolioMain extends React.Component {
 
   };
 
-  //when page loads return to top
+  //when return to top button clicked, return user to top and set state.project to null
   returnTop() {
-    window.scrollTo(0, 0)
+    window.scrollTo({ top: 0, behavior: 'smooth'})
+    this.setState({
+      project: null
+    })
   }
 
   //sets Nav state to visible/not visible
@@ -75,7 +80,8 @@ export default class PortfolioMain extends React.Component {
   toggleMain(mainVal) {
 
     this.setState({
-      mainVisible: mainVal
+      mainVisible: mainVal,
+      project: null
     })
     // if screen width < 810 the mobile nav can be toggled true/false
     if (this.state.width < 810) {
@@ -85,10 +91,14 @@ export default class PortfolioMain extends React.Component {
 
   }
 
+  setProject(project) {
+    this.setState({
+      project: project
+    })
+  }
+
 
   render() {
-
-    console.log('state: ', this.state)
 
     let mainDisplay, colorIcon, showUpIcon, footerLink, navMenuDisplay, navIcon
 
@@ -97,30 +107,30 @@ export default class PortfolioMain extends React.Component {
     //IF statements to set values for different variable based on app state.
     //also used to set the component being displayed to users
     if (this.state.mainVisible === 0) {
-      mainDisplay = <Home mainVisible={this.state.mainVisible} />
+      mainDisplay = <Home />
       colorIcon = 'colorIconBlk'
     }
     if (this.state.mainVisible === 1) {
-      mainDisplay = <About mainVisible={this.state.mainVisible} />
+      mainDisplay = <About />
       colorIcon = 'colorIconRd'
     }
     if (this.state.mainVisible === 2) {
-      mainDisplay = <Projects mainVisible={this.state.mainVisible} />
+      mainDisplay = <Projects returnTop={() => this.returnTop()} project={this.state.project}/>
       colorIcon = 'colorIconGrn'
       showUpIcon = <div className='upIcon' id={colorIcon} onClick={() => this.returnTop()}>&#8607;</div>
       footerLink = techIcon
     }
     if (this.state.mainVisible === 3) {
-      mainDisplay = <Contact mainVisible={this.state.mainVisible} />
+      mainDisplay = <Contact />
       colorIcon = 'colorIconBlu'
       footerLink = techIcon
     }
     if (this.state.leftNavVisible === true) {
-      navMenuDisplay = <LeftNav toggleNav={(mainVal) => this.toggleNav(mainVal)} 
+      navMenuDisplay = <LeftNav toggleNav={(mainVal) => this.toggleNav(mainVal)} setProject={(project) => this.setProject(project)}
         toggleMain={(mainVal) => this.toggleMain(mainVal)} mainVisible={this.state.mainVisible} />
     }
     if (this.state.mobileNavVisible === true) {
-      navMenuDisplay = <MobileNav toggleNav={(mainVal) => this.toggleNav(mainVal)}
+      navMenuDisplay = <MobileNav toggleNav={(mainVal) => this.toggleNav(mainVal)} setProject={(project) => this.setProject(project)}
         toggleMain={(mainVal) => this.toggleMain(mainVal)} mainVisible={this.state.mainVisible} />
     }
     if (this.state.navIcon === true) {
