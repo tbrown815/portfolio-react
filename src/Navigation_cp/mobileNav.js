@@ -4,7 +4,7 @@ import './mainNav.css'
 
 export default class MobileNav extends React.Component {
 
-    //sets the mainVisible variable when van item is clicked and passes it to App.js to set the state
+    //sets the mainVisible variable when an item is clicked and passes it to App.js to set the state and component that is visible
     toggleDisplay(val) {
 
         let mainVisible = val
@@ -41,7 +41,7 @@ export default class MobileNav extends React.Component {
             navMenu = 'navMenuContact'
         }
 
-        /* values available to use for compoenent display state
+        /*NOTES: values available to use for compoenent display state
         mainVisible =
         Home = 0
         About = 1

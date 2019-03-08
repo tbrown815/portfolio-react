@@ -17,13 +17,14 @@ export default class PortfolioMain extends React.Component {
     this.state = {
       leftNavVisible: false,
       mobileNavVisible: false,
+      navIcon: false,
       mainVisible: 0,
       width: 0
     }
     window.addEventListener("resize", this.update);
 
 
-    /* values available to use for compoenent display state
+    /* NOTES: values available to use for compoenent display state
     mainVisible =
       Home = 0
       About = 1
@@ -41,13 +42,15 @@ export default class PortfolioMain extends React.Component {
       this.setState({
         width: window.innerWidth,
         leftNavVisible: true,
-        mobileNavVisible: false
+        mobileNavVisible: false,
+        navIcon: false
       });
     }
     else {
       this.setState({
         width: window.innerWidth,
-        leftNavVisible: false
+        leftNavVisible: false,
+        navIcon: true
       });
     }
 
@@ -74,7 +77,7 @@ export default class PortfolioMain extends React.Component {
     this.setState({
       mainVisible: mainVal
     })
-
+    // if screen width < 810 the mobile nav can be toggled true/false
     if (this.state.width < 810) {
 
       this.toggleNav()
@@ -83,11 +86,11 @@ export default class PortfolioMain extends React.Component {
   }
 
 
-
-
   render() {
 
-    let mainDisplay, colorIcon, showUpIcon, footerLink, navMenuDisplay
+    console.log('state: ', this.state)
+
+    let mainDisplay, colorIcon, showUpIcon, footerLink, navMenuDisplay, navIcon
 
     let techIcon = <a href="https://fontawesome.com/license" target='_blank' rel='noopener noreferrer'>Icon Images created by Font Awesome - fontawesome.com</a>
 
@@ -113,12 +116,15 @@ export default class PortfolioMain extends React.Component {
       footerLink = techIcon
     }
     if (this.state.leftNavVisible === true) {
-      navMenuDisplay = <LeftNav toggleNav={(mainVal) => this.toggleNav(mainVal)}
+      navMenuDisplay = <LeftNav toggleNav={(mainVal) => this.toggleNav(mainVal)} 
         toggleMain={(mainVal) => this.toggleMain(mainVal)} mainVisible={this.state.mainVisible} />
     }
     if (this.state.mobileNavVisible === true) {
       navMenuDisplay = <MobileNav toggleNav={(mainVal) => this.toggleNav(mainVal)}
         toggleMain={(mainVal) => this.toggleMain(mainVal)} mainVisible={this.state.mainVisible} />
+    }
+    if (this.state.navIcon === true) {
+      navIcon = <div className='navIcon' id={colorIcon} role='navigation' onClick={() => this.toggleNav()}>&#9776;</div>
     }
 
 
@@ -128,7 +134,7 @@ export default class PortfolioMain extends React.Component {
       <main id='main' className='main'>
 
         <div className='menuDiv'>
-          <div className='navIcon' id={colorIcon} role='navigation' onClick={() => this.toggleNav()}>&#9776;</div>
+          {navIcon}
           {navMenuDisplay}
           {showUpIcon}
         </div>

@@ -16,7 +16,7 @@ export default class LeftNav extends React.Component {
     render() {
 
         //depending on value of mainVisible different CSS will be set for the nav menu
-        let homeMenu, aboutMenu, projectsMenu, contactMenu, navMenu, passCheck, challengeAccept, dreadPirate
+        let homeMenu, aboutMenu, projectsMenu, contactMenu, navMenu, passCheck, challengeAccept, dreadPirate, showUpIcon, colorIcon
 
         if (this.props.mainVisible === 0) {
             homeMenu = 'selHomeNav'
@@ -41,7 +41,7 @@ export default class LeftNav extends React.Component {
             navMenu = 'navMenuContact'
         }
 
-        /* values available to use for compoenent display state
+        /*NOTES: values available to use for compoenent display state
         mainVisible =
         Home = 0
         About = 1

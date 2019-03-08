@@ -1,11 +1,3 @@
-.mainContact.hide {
-    visibility: hidden;
-}
-
-.mainContact.display {
-    visibility: visible;
-}
-
 .contactContent {
     font-size: 25px;
     margin-bottom: 5%;
@@ -17,6 +9,10 @@
 
 .contactIMG {
     width: 20%;
+}
+
+.emailIMG {
+    width: 25%;
 }
 
 .link img {
@@ -31,12 +27,28 @@ a:visited {
     text-decoration: none;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 480px) {
+@media only screen and (min-width: 0px) and (max-width: 374px) {
     .contactContent {
         font-size: 18px;
         margin-bottom: 5%;
     }
     .contactLinks {
         font-size: 18px;
+    }
+    .emailIMG {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 480px) {
+    .contactContent {
+        font-size: 18px;
+        margin-bottom: 5%;
+    }
+    .contactLinks {
+        font-size: 18px;
+    }
+    .emailIMG {
+        width: 23%;
     }
 }

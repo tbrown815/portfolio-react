@@ -1,11 +1,3 @@
-.projectsHome.hide {
-    visibility: hidden;
-}
-
-.projectsHome.display {
-    visibility: visible;
-}
-
 .projectSection {
     margin-top: 1%;
     margin-bottom: 15%;

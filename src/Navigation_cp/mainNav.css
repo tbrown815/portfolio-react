@@ -11,27 +11,7 @@
 #selContactNav {
     font-weight: bolder;
 }
-/*
-#navMenuHome {
-    background: linear-gradient(-45deg, whitesmoke, #000000);
-    border: 1px solid black;
-}
 
-#navMenuAbout {
-    background: linear-gradient(-45deg, #9e0012, #000000);
-    border: 1px solid #9e0012;
-}
-
-#navMenuProjects {
-    background: linear-gradient(-45deg, #2d8e39, #000000);
-    border: 1px solid #2d8e39;
-}
-
-#navMenuContact {
-    background: linear-gradient(-45deg, #00329e, #000000);
-    border: 1px solid #00329e;
-}
-*/
 #navMenuHome, #navMenuAbout, #navMenuProjects, #navMenuContact {
     background-color: #e8e8e8;
 
@@ -140,9 +120,6 @@
 }
 
 @media only screen and (min-width: 810px) {
-    .navIcon, .mobileNavMenu {
-        visibility: hidden;
-    }
     .navMenu {
         width: 30%;
         overflow: hidden;
@@ -150,9 +127,6 @@
 }
 
 @media only screen and (min-width: 1024px) {
-    .navIcon, .mobileNavMenu {
-        visibility: hidden;
-    }
     .navMenu {
         width: 25%;
         overflow: hidden;
@@ -160,19 +134,13 @@
 }
 
 @media only screen and (min-width: 1440px) {
-    .navIcon, .mobileNavMenu {
-        visibility: hidden;
-    }
-    .navMenu {
+     .navMenu {
         width: 20%;
         overflow: hidden;
     }
 }
 
 @media only screen and (min-width: 2000px) {
-    .navIcon, .mobileNavMenu {
-        visibility: hidden;
-    }
     .navMenu {
         width: 15%;
         overflow: hidden;

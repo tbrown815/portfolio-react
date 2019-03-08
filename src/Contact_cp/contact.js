@@ -12,7 +12,7 @@ export default class Contact extends React.Component {
     render() {
 
         //reusable variables for icon badges
-        let email = <img className='contactIMG' src={require('../images/envelope-solid.svg')} title='E-mail Me @ tbrown@brownscastle.com' alt='email Icon' />
+        let email = <img className='contactIMG emailIMG' src={require('../images/envelope-solid.svg')} title='E-mail Me @ tbrown@brownscastle.com' alt='email Icon' />
         let githubpro = <img className='contactIMG' src={require('../images/github-brands.svg')} title='GitHub Profile' alt='GitHub Icon' />
         let linkedin = <img className='contactIMG' src={require('../images/linkedin-brands.svg')} title='LinkedIn' alt='LinkedIn Icon' />
 

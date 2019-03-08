@@ -46,8 +46,8 @@ export default class Projects extends React.Component {
                             up with a good password.  People use their spouse's, kids', or pet's names and maybe throw some numbers on to the
                             end if it's required.  Then sit back and think "This is strong, no one will get this!".  This application
                     allows a user to enter a password so that it can be compared to passwords stored in the compromised password database of '{pwnedLink}'.
-                                            Additionally, users can create new passwords or pass phrases in the application and those new passwords are also compared to the
-                                            compromised password database.
+                                                    Additionally, users can create new passwords or pass phrases in the application and those new passwords are also compared to the
+                                                    compromised password database.
             <div className='imageTech'>
                                 <div className='techBadge'>
                                     {htmlIcon}{cssIcon}{jsIcon}{jQueryIcon}

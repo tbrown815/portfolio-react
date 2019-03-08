@@ -1,11 +1,3 @@
-.mainAbout.hide {
-    visibility: hidden;
-}
-
-.mainAbout.display {
-    visibility: visible;
-}
-
 .aboutContent {
     font-size: 25px;
     margin-bottom: 5%;
