@@ -6,6 +6,7 @@
 .contactLinks {
     display: inline-block;
     width: 250px;
+
 }
 
 .contactIMG {
@@ -16,16 +17,26 @@
     width: 25%;
 }
 
-.link img {
+.contactButton img {
     margin: auto;
     vertical-align: middle;
     display: inline-block;
 }
 
-a,
-a:visited {
+.contactButton {
+    width: 100%;
+
+    text-align: left;
+    background: #e8e8e8;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    font-size: 25px;
     color: black;
-    text-decoration: none;
+}
+
+.contactButton:hover {
+    color: #818181;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 374px) {
@@ -33,7 +44,8 @@ a:visited {
         font-size: 18px;
         margin-bottom: 5%;
     }
-    .contactLinks {
+    .contactLinks,
+    .contactButton {
         font-size: 18px;
     }
     .emailIMG {
@@ -46,7 +58,8 @@ a:visited {
         font-size: 18px;
         margin-bottom: 5%;
     }
-    .contactLinks {
+    .contactLinks,
+    .contactButton {
         font-size: 18px;
     }
     .emailIMG {
