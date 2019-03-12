@@ -58,7 +58,7 @@ export default class Projects extends React.Component {
                             I created this project to help people fix their terrible passwords.  Many people don't take the time to come
                             up with a strong password.  Common choices are spouse's, children's, or pet's names with some numbers at the end.
                             This application allows a user to enter a password so that it can be compared to passwords stored in the 
-                            compromised password database of '{pwnedLink}'. Additionally, users can create new passwords or pass phrases 
+                            compromised password database of '{pwnedLink}'. Additionally, users can create new passwords or passphrases 
                             in the application, and those new passwords are also compared to the compromised password database.
                             
             <div className='imageTech'>
@@ -93,7 +93,7 @@ export default class Projects extends React.Component {
                         and activity. Why were there no challenges for those data points? After looking around at other applications I 
                         noticed a trend - current apps have steps only challenges. Boring! In its current state, users are able to 
                         document their steps and miles. My goal with this project is to create a place where users can track their 
-                        activiities and challenge each other to steps as well as those additional data points.
+                        activities and challenge each other to steps as well as those additional data points.
 
             <div className='imageTech'>
                                 <div className='techBadge'>
@@ -129,7 +129,7 @@ export default class Projects extends React.Component {
                         currently has two modes of operation - public and account. Public mode allows a user to search for restaurants by 
                         zip code. The application will return results and link them to the associated {yelpLink} page. Account mode gives the user 
                         a "digital cookie jar." They can search for specific restaurants and save them to their favorites.  While playing the 
-                        game, results are generated direcly from their favorites along with links to the restaurant's associated {yelpLink} page.
+                        game, results are generated directly from their favorites along with links to the restaurant's associated {yelpLink} page.
 
                     <div className='imageTech'>
                                 <div className='techBadge'>
