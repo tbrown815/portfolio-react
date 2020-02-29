@@ -61,7 +61,7 @@ export default class Contact extends React.Component {
                         <button type='button' className='link contactButton' onClick={() => this.mailTo('tbrown@brownscastle.com')} >{email} E-Mail Me</button>
                     </div>
                     <div className='contactLinks'>
-                        <button className='link contactButton' onClick={() => window.open('https://github.com/BrotherFatcake', '_blank')}>{githubpro} GitHub Profile</button>
+                        <button className='link contactButton' onClick={() => window.open('https://github.com/tbrown815', '_blank')}>{githubpro} GitHub Profile</button>
                     </div>
                     <div className='contactLinks'>
                         <button className='link contactButton' onClick={() => window.open('https://www.linkedin.com/in/tyler-brown-716431b', '_blank')}>{linkedin} LinkedIn Profile</button>

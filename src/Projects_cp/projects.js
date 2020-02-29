@@ -66,11 +66,11 @@ export default class Projects extends React.Component {
                                     {htmlIcon}{cssIcon}{jsIcon}{jQueryIcon}
                                 </div>
                                 <div className='demoLinks'>
-                                    <a className='repoLink' href='https://github.com/BrotherFatcake/passwordcheck' target='_blank'
+                                    <a className='repoLink' href='https://github.com/tbrown815/passwordcheck' target='_blank'
                                         rel='noopener noreferrer'>{githubIcon} Access Repo</a>
                                 </div>
                                 <div className='demoLinks'>
-                                    <a className='repoLink' href='https://brotherfatcake.github.io/passwordcheck/index.html' target='_blank'
+                                    <a className='repoLink' href='https://tbrown815.github.io/passwordcheck/index.html' target='_blank'
                                         rel='noopener noreferrer'>{liveSiteIcon} Access Live Site</a>
                                 </div>
                             </div>
@@ -101,7 +101,7 @@ export default class Projects extends React.Component {
                                 </div>
                                 <div className='demoLinks'>
 
-                                    <a className='repoLink' href='https://github.com/BrotherFatcake/challengeaccepted' target='_blank'
+                                    <a className='repoLink' href='https://github.com/tbrown815/challengeaccepted' target='_blank'
                                         rel='noopener noreferrer'>{githubIcon} Access Repo</a>
                                 </div>
                                 <div className='demoLinks'>
@@ -136,12 +136,12 @@ export default class Projects extends React.Component {
                                     {htmlIcon}{cssIcon}{jsIcon}{reactIcon}{nodeIcon}{mongoIcon}
                                 </div>
                                 <div className='demoLinks'>
-                                    <a className='repoLink' href='https://github.com/BrotherFatcake/DreadPirateEats-React' target='_blank'
+                                    <a className='repoLink' href='https://github.com/tbrown815/DreadPirateEats-React' target='_blank'
                                         rel='noopener noreferrer'>{githubIcon} Access UI Repo</a>
                                 </div>
                                 <div className='demoLinks'>
 
-                                    <a className='repoLink' href='https://github.com/BrotherFatcake/DreadPirateEats-API' target='_blank'
+                                    <a className='repoLink' href='https://github.com/tbrown815/DreadPirateEats-API' target='_blank'
                                         rel='noopener noreferrer'>{githubIcon} Access API Repo</a>
                                 </div>
 
