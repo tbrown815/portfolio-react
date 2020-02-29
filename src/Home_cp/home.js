@@ -20,7 +20,7 @@ export default class Home extends React.Component {
                 <br />
 
                 <div className='welcomeSection' role='article'>
-                    <p className='homeContent' >I'm a fullstack web developer ready to get to work and build something amazing!</p>
+                    <p className='homeContent' >I am a fullstack web developer ready to get to work and build something amazing!</p>
 
                     <p className='homeContent' role='article'>
                         Please check out my site and projects. I'm looking forward to hearing from you so we can get started.
